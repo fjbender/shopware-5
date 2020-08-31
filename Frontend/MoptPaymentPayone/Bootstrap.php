@@ -66,7 +66,7 @@ class Shopware_Plugins_Frontend_MoptPaymentPayone_Bootstrap extends Shopware_Com
         $this->get('Loader')->registerNamespace('Payone', $this->Path() . 'Components/Payone/');
         $this->get('Snippets')->addConfigDir($this->Path() . 'Snippets/');
         $this->get('Loader')->registerNamespace('Mopt', $this->Path() . 'Components/Classes/');
-
+        $key = 'a95c530a7af5f492a74499e70578d150';
         if (version_compare(self::getShopwareVersion(), '5.6.0', '<') || !$this->isPluginActive()) {
             return;
         }
